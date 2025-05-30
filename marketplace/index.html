@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Chindocoins Marketplace</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/marketplace.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>🛍 Marketplace — Buy Mood & Victory NFTs</h1>
+  <nav>
+    <a href="../index.html">Home</a> |
+    <a href="../gallery/index.html">Gallery</a>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="gallery-grid">
+
+    <div class="gallery-card">
+      <img src="../assets/mint/pride.jpg" alt="Pride Victory NFT">
+      <h3>PrideVictory ($PVCT)</h3>
+      <p>Celebrate same-sex marriage legalization 🏳️‍🌈</p>
+      <button onclick="addToBasket('PVCT')">Add to Basket</button>
+    </div>
+
+    <div class="gallery-card">
+      <img src="../assets/mint/trump.jpg" alt="Trump Meme NFT">
+      <h3>TrumpShadeCoin ($TSHC)</h3>
+      <p>Roasts gone global. Let’s coin it. 🔥</p>
+      <button onclick="addToBasket('TSHC')">Add to Basket</button>
+    </div>
+
+    <div class="gallery-card">
+      <img src="../assets/mint/chattri.jpg" alt="Unity NFT">
+      <h3>UnityCoin ($UNCOIN)</h3>
+      <p>Tribute to the Chattri Memorial Service 🇮🇳</p>
+      <button onclick="addToBasket('UNCOIN')">Add to Basket</button>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 40px;">
+    <h3>Your Basket:</h3>
+    <ul id="basketList"></ul>
+    <button onclick="checkout()" class="btn">Checkout</button>
+  </div>
+</section>
+
+</body>
+</html>
