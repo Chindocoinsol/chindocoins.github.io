@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Admin Panel — Chindocoins</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/admin.js" defer></script>
+</head>
+<body>
 
+<header>
+  <h1>Admin CMS - Chindocoins HQ 🛠️</h1>
+</header>
+
+<section class="section">
+  <h2>👤 Admin Login (Firebase Auth)</h2>
+  <button onclick="adminLogin()">Login with Google</button>
+</section>
+
+<section class="section">
+  <h2>🧠 Meme Theme Scanner</h2>
+  <p>Suggested themes from across the internet:</p>
+  <button onclick="refreshTrends()" class="btn">🔁 Refresh</button>
+  <div id="trendResults" class="meme-list"></div>
+</section>
+
+<section class="section">
+  <h2>🎯 New Coin Editor</h2>
+  <input placeholder="Coin Name (e.g. WAGMI-Wipeout)" />
+  <input placeholder="Symbol (e.g. $WWO)" />
+  <textarea placeholder="Describe the event and vibe..."></textarea>
+  <input placeholder="Link to Story or Tweet" />
+  <br>
+  <button class="btn">➕ Create New Meme Coin</button>
+</section>
+
+</body>
+</html>
