@@ -1,3 +1,9 @@
+// js/script.js
+// Handles homepage logic for CHINDO
+// Firebase: Reads votes, wallet connects
+
+import { db } from './firebase-init.js';
+
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     document.getElementById("splash-screen").style.display = "none";
