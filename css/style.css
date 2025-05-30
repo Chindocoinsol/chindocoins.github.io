@@ -83,3 +83,29 @@ footer {
   padding: 20px;
   text-align: center;
 }
+.gallery {
+  padding: 40px 10px;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.gallery-card {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.gallery-card img {
+  width: 100%;
+  border-radius: 6px;
+}
