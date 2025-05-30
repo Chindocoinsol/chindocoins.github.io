@@ -1,0 +1,25 @@
+<section class="section dark">
+  <h2>📬 Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your name" required />
+    <input type="email" name="user_email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message for Chindocoins…" required></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("YOUR_PUBLIC_KEY");
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(() => {
+        alert("Thanks for reaching out!");
+        this.reset();
+      }, (err) => {
+        alert("Failed to send: " + JSON.stringify(err));
+      });
+  });
+</script>
