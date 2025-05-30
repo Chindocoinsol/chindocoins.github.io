@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChameleonCoin - The Shape-Shifting Meme Coin</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0d0d0d"/>
+  <title>Chindocoins | Mood Changes Everything</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>ChameleonCoin ($CHAM)</h1>
-        <p>The Shape-Shifting Meme Coin Ready to Take Over!</p>
-    </header>
-    <section class="hero">
-        <img src="chameleon.png" alt="ChameleonCoin Mascot">
-        <button onclick="joinCrew()">Join the Chameleon Crew!</button>
-    </section>
-    <section class="tokenomics">
-        <h2>Tokenomics</h2>
-        <ul>
-            <li>Total Supply: 1 Trillion $CHAM</li>
-            <li>Presale: 50%</li>
-            <li>Liquidity: 30%</li>
-            <li>Community Rewards: 20%</li>
-        </ul>
-    </section>
-    <section class="community">
-        <h2>Join Our Community</h2>
-        <p>Follow us on social media for the latest memes and updates!</p>
-        <a href="https://discord.com" target="_blank">Discord</a> |
-        <a href="https://x.com" target="_blank">X</a> |
-        <a href="https://telegram.org" target="_blank">Telegram</a>
-    </section>
-    <footer>
-        <p>&copy; 2025 ChameleonCoin. All rights reserved.</p>
-        <p></p>
-    </footer>
-    <script src="script.js"></script>
-</body>
 
+  <!-- Splash -->
+  <div id="splash-screen">
+    <img src="assets/logo/chindo-logo.png" alt="Chindo Splash Logo">
+    <p class="slogan">What are you today?</p>
+  </div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <img src="assets/characters/chindo-mascot.png" alt="Loading CHINDO...">
+    <p>Loading your mood token...</p>
+  </div>
+
+  <!-- Main Content -->
+  <header>
+    <nav>
+      <h1>CHINDO</h1>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="victory/index.html">$VKTR</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="marketplace/index.html">Marketplace</a></li>
+        <li><a href="admin/index.html">Admin</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="hero">
+      <div class="overlay">
+        <h2>🚀 PopeCoin ($POPE)</h2>
+        <p>The memecoin born from viral theology after the Pope’s most awkward moment.</p>
+        <div class="wallet-actions">
+          <button onclick="connectWallet()">🔌 Connect Wallet</button>
+          <span id="contract">0xPOPE123… <button onclick="copyContract()">📋</button></span>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <a class="story-link" href="#" title="Article from CNN, Reddit, and memes" target="_blank">📰 Read the Story behind the meme</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Voting -->
+  <section class="section">
+    <div class="container">
+      <h2>🗳️ Vote the next token!</h2>
+      <p>Choose what CHINDO should become next:</p>
+      <form id="vote-form">
+        <label><input type="radio" name="vote" value="elon-doge" checked> Elon quitting DOGE</label><br />
+        <label><input type="radio" name="vote" value="trump-shade"> Trump x Africa Incident</label><br />
+        <label><input type="radio" name="vote" value="pepe-vs-chindo"> PEPE vs CHINDO War</label><br />
+        <button type="submit" class="btn">Submit Vote</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chindocoins</p>
+  </footer>
+
+</body>
 </html>
