@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+}
+
+#splash-screen, #loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #00ffe1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  z-index: 10000;
+  animation: fadeOut 3s ease 2s forwards;
+}
+
+#loader img, #splash-screen img {
+  height: 100px;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+  padding: 20px;
+}
+
+nav h1 {
+  color: #0ff;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.hero {
+  background: url('../assets/hero/chindo-popehero.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  width: 100%;
+}
+
+.btn {
+  background: #00ffe1;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.story-link {
+  color: #ff0;
+  margin-top: 10px;
+  display: block;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+}
